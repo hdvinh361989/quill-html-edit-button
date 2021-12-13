@@ -8,9 +8,9 @@
   "license": "MIT",
   "scripts": {
     "install": "npm run build",
-    "watch": "webpack --watch --progress",
-    "start": "webpack --mode development && webpack-dev-server --mode development --hot --port 8001",
-    "build": "webpack --mode production",
+    "watch": "npx webpack --watch --progress",
+    "start": "npx webpack --mode development && webpack-dev-server --mode development --hot --port 8001",
+    "build": "npx webpack --mode production",
     "test": "jest",
     "test-watch": "jest --watch-all",
     "clean": "rm -rf dist/"
