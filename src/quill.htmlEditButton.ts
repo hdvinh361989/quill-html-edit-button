@@ -36,7 +36,7 @@ class htmlEditButton {
     button.title = options.buttonTitle || "Show HTML source";
     button.type = "button";
     const onSave = (html: string) => {
-      quill.clipboard.dangerouslyPasteHTML(html);
+      quill.clipboard.dangerouslyPasteHTML(html, 'user');
     };
     button.onclick = function (e) {
       e.preventDefault();
@@ -114,14 +114,12 @@ function launchPopupEditor(
   const modules = options && options.editorModules;
   const hasModules = !!modules && !!Object.keys(modules).length;
   const modulesSafe = hasModules ? modules : {};
-  // console.time('new Quill')
   const editor = new Quill(htmlEditor, {
     modules: {
       syntax: options.syntax,
       ...modulesSafe,
     },
   });
-  // console.timeEnd('new Quill')
 
   buttonCancel.onclick = function () {
     if (prependSelector) {
@@ -144,7 +142,6 @@ function launchPopupEditor(
     const qlElement = container.querySelector(".ql-editor") as HTMLDivElement;
     const htmlInputFromPopup = qlElement.innerText;
     const htmlOutputFormatted = OutputHTMLParser(htmlInputFromPopup);
-    console.log('OutputHTMLParser', { htmlInputFromPopup, htmlOutputFormatted })
     saveCallback(htmlOutputFormatted);
     if (prependSelector) {
       prependSelector.removeChild(overlayContainer);
