@@ -1,85 +1,86 @@
 
-.ql-html-overlayContainer{
-  background: #0000007d;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.ql-html-overlayContainer {
+    background: #0000007d;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.ql-html-popupContainer{
-  border-radius: 10px;
-  width: 80vw;
-  height: 80vh;
-  display: flex;
-  overflow: hidden;
+.ql-html-popupContainer {
+    border-radius: 10px;
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    overflow: hidden;
 }
 
-.ql-html-textContainer{
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  position: relative;
+.ql-html-textContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 
-.ql-html-popupTitle{
-  position: absolute;
-  width: 100%;
-  height: 36px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.ql-html-popupTitle {
+    position: absolute;
+    width: 100%;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.ql-html-textArea{
-  flex: 1;
-  background: #fff;
-  overflow: auto;
+.ql-html-textArea {
+    flex: 1;
+    background: #fff;
+    overflow: auto;
 }
 
 
-.ql-editor{
-  padding: 24px;
+.ql-editor {
+    padding: 24px;
 }
 
-.ql-html-buttonGroup{
-  order: -1;
-  display: flex;
-  justify-content: flex-end;
-  position: unset;
-  bottom: unset;
-  transform: unset;
-  left: unset;
-  background-color: whitesmoke;
+.ql-html-buttonGroup {
+    order: -1;
+    display: flex;
+    justify-content: flex-end;
+    position: unset;
+    bottom: unset;
+    transform: unset;
+    left: unset;
+    background-color: whitesmoke;
 }
-button{
-  box-sizing: border-box;
-  position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-  cursor: pointer;
-  outline: none;
-  border: none;
-  -webkit-tap-highlight-color: transparent;
-  display: inline-block;
-  white-space: nowrap;
-  text-decoration: none;
-  vertical-align: baseline;
-  text-align: center;
-  margin: 0;
-  min-width: 64px;
-  line-height: 36px;
-  padding: 0 16px;
-  border-radius: 4px;
-  overflow: visible;
-  background: transparent;
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 500;
+
+.ql-html-buttonGroup button {
+    box-sizing: border-box;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    -webkit-tap-highlight-color: transparent;
+    display: inline-block;
+    white-space: nowrap;
+    text-decoration: none;
+    vertical-align: baseline;
+    text-align: center;
+    margin: 0;
+    min-width: 64px;
+    line-height: 36px;
+    padding: 0 16px;
+    border-radius: 4px;
+    overflow: visible;
+    background: transparent;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
 }
