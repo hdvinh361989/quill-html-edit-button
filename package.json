@@ -7,7 +7,6 @@
   "author": "Ben Winding <ben.winding@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "install": "npm run build",
     "watch": "npx webpack --watch --progress",
     "start": "npx webpack --mode development && webpack-dev-server --mode development --hot --port 8001",
     "build": "npx webpack --mode production",
